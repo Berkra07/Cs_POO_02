@@ -7,12 +7,14 @@ public class Exe002Raio {
         Locale.setDefault(Locale.US);
         Scanner scraio=new Scanner(System.in);
 
+        double R,A,pi=3.14159;
+
         System.out.println("Digite o raio para descobrir a àrea do circulo");
-        float raio= scraio.nextFloat();
+        R=scraio.nextDouble();
 
-        float area = 3.14159f *(raio*raio) ;
+        A=pi * R * R;
 
-        System.out.printf("A área do círculo é: %.4f\n", area);
+        System.out.printf("A= %.4f\n", A);
 
 
     }
