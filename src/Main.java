@@ -1,9 +1,19 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        System.out.println("Primeiro commit do curso");
+        double x = 3.0;
+        double y = 4.0;
+        double z = -5.0;
+        double A, B, C;
+
+        A=Math.sqrt(x);
+        B=Math.sqrt(y);
+        C=Math.sqrt(25.0);
+        System.out.println("Raiz quadrada de" + x + " = " + A);
+        System.out.println("Raiz quadrada de" + y + " = " + B);
+        System.out.println("Raiz quadrada de 25 = " + C);
 
     }
 }
