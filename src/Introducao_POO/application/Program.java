@@ -5,6 +5,7 @@ import Introducao_POO.entities.Triangle;
 import java.util.Locale;
 import java.util.Scanner;
 public class Program {
+
     public static void main(String[] args) {
 
         Locale.setDefault(Locale.US);
@@ -23,11 +24,8 @@ public class Program {
         y.b= sc.nextDouble();
         y.c= sc.nextDouble();
 
-        double p= (x.a + x.b + x.c) / 2.0;
-        double areaX= Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c)); //Raiz quadrada para descobrir a area X
-
-        p=(y.a + y.b + y.c) / 2.0;
-        double areaY=Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c)); //Raiz quadrada para descobrir a area Y
+        double areaX=x.area(); //Raiz quadrada para descobrir a area X
+        double areaY= y.area(); //Raiz quadrada para descobrir a area Y
 
         System.out.printf("triangle X area: %.4f%n", areaX);
         System.out.printf("triagle Y area: %.4f%n", areaY);
