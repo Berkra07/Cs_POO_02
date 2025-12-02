@@ -1,6 +1,6 @@
-package Introducao_POO.application;
+package CalculoAreaTriangulo.application;
 
-import Introducao_POO.entities.Triangle;
+import CalculoAreaTriangulo.entities.Triangle;
 
 import java.util.Locale;
 import java.util.Scanner;

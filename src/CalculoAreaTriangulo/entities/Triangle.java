@@ -1,4 +1,4 @@
-package Introducao_POO.entities;
+package CalculoAreaTriangulo.entities;
 
 public class Triangle {
     public double a;
