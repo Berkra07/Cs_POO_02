@@ -2,7 +2,6 @@ package RectangleCalculator.aplication;
 
 import RectangleCalculator.entities.Rectangle;
 
-import javax.xml.transform.Source;
 import java.util.Locale;
 import java.util.Scanner;
 
