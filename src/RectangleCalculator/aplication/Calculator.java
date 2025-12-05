@@ -12,7 +12,7 @@ public class Calculator {
 
         Rectangle rectangle= new Rectangle();
 
-        System.out.println("Enter rectangle width and heitgh:");
+        System.out.println("Enter rectangle width and height:");
         rectangle.Width = sc.nextDouble();
         rectangle.Height = sc.nextDouble();
 
