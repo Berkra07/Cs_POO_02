@@ -1,9 +1,15 @@
 package DadosEstoque.entities;
 
 public class Product {
+
+    //Atributos da classe
+
     public String name;
     public double price;
     public int quantity;
+
+
+    //Metodos
 
     public double totalValueInStock(){
         return price * quantity;
@@ -27,4 +33,6 @@ public class Product {
                 + " units, Total: $ "
                 +totalValueInStock();
     }
+
+
 }
