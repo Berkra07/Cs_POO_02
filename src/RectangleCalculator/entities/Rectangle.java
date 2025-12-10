@@ -2,7 +2,7 @@ package RectangleCalculator.entities;
 
 public class Rectangle  {
 
-    //Variaveis
+    //Atributos
     public double Width;
     public double Height;
 
