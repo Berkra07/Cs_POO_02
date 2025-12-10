@@ -1,6 +1,6 @@
-package AumentoSalarioPorcentagem.entities;
+package AumentoSalarioPorcentagem.application;
 
-import AumentoSalarioPorcentagem.application.Employee;
+import AumentoSalarioPorcentagem.entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;
