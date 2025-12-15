@@ -11,6 +11,19 @@ public class Product {
 
     //Metodos
 
+    public Product (String name, double price, int quantity){
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public Product (String name, double price){
+        this.name = name;
+        this.price = price;
+        quantity = 1;
+    }
+
+
     public double totalValueInStock(){
         return price * quantity;
     }
