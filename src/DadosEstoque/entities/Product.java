@@ -9,7 +9,7 @@ public class Product {
     public int quantity;
 
 
-    //Metodos
+   //Construtores
 
     public Product (String name, double price, int quantity){
         this.name = name;
@@ -22,8 +22,11 @@ public class Product {
         this.price = price;
         quantity = 1;
     }
+    //Getters e setters
 
+    
 
+    //Metodos
     public double totalValueInStock(){
         return price * quantity;
     }
