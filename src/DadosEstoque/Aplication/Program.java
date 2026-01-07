@@ -17,9 +17,10 @@ public class Program {
         String name=sc.nextLine();
         System.out.print("Price: ");
         double price=sc.nextDouble();
-
-
         Product product = new Product(name, price);
+
+        product.setName("Computer");
+        System.out.println("Update name: " + product.getName());
 
         System.out.println();
         System.out.println("Product data: " + product);
