@@ -4,9 +4,9 @@ public class Product {
 
     //Atributos da classe
 
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
 
    //Construtores
@@ -24,7 +24,14 @@ public class Product {
     }
     //Getters e setters
 
-    
+    public String getName( ){
+        return name;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
 
     //Metodos
     public double totalValueInStock(){
