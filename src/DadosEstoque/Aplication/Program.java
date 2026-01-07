@@ -21,6 +21,9 @@ public class Program {
 
 
         //getters e setters sendo usado para exemplo
+            product.setName("Computer");
+            System.out.println("Update name: " + product.getName());
+
         // onde mostra as informaçoes dadas no leitor
         System.out.println();
         System.out.println("Product data: " + product);
