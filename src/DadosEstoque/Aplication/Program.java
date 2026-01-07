@@ -40,6 +40,9 @@ public class Program {
         System.out.println();
         System.out.println("Product data: " + product);
 
+        System.out.println("Iniciando 2026");
+
+
 
 
         sc.close();
