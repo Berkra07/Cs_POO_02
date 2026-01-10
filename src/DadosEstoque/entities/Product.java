@@ -11,12 +11,6 @@ public class Product {
 
    //Construtores
 
-    public Product (String name, double price, int quantity){
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
-    }
-
     public Product (String name, double price){
         this.name = name;
         this.price = price;
@@ -45,6 +39,7 @@ public class Product {
     public double totalValueInStock(){
         return price * quantity;
     }
+
     public void addProducts(int quantity){
 
         this.quantity += quantity;
