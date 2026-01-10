@@ -17,12 +17,9 @@ public class Program {
         String name=sc.nextLine();
         System.out.print("Price: ");
         double price=sc.nextDouble();
-        Product product = new Product(name, price);
+        Product product = new Product(name,price);
 
 
-        //getters e setters sendo usado para exemplo
-            product.setName("Computer");
-            System.out.println("Update name: " + product.getName());
 
         // onde mostra as informaçoes dadas no leitor
         System.out.println();
@@ -48,7 +45,7 @@ public class Program {
         System.out.println();
         System.out.println("Product data: " + product);
 
-        
+
         sc.close();
     }
 }
