@@ -7,10 +7,10 @@ public class ContaBancaria {
 
     //Construtores
 
-    public ContaBancaria(double saldo, int numeroConta, int titular) {
-        this.saldo = saldo;
+    public ContaBancaria(int numeroConta, int titular) {
         this.numeroConta = numeroConta;
         this.titular = titular;
+        this.saldo = 0;
     }
 
     //getters e setters
@@ -41,11 +41,11 @@ public class ContaBancaria {
 
     //METODOS
 
-    public void AdcionarSaldo(int saldo){
-        this.saldo =+ saldo;
+    public void adicionarSaldo(double saldo){
+        this.saldo += saldo;
     }
-    public void resgatarSaldo(int saldo){
-        this.saldo =- saldo;
+    public void resgatarSaldo(double saldo){
+        this.saldo -= saldo;
     }
 
 }
