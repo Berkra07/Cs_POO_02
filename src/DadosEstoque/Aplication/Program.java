@@ -14,9 +14,9 @@ public class Program {
         //Leitor de nome e price
         System.out.println("===== Enter product data=====");
         System.out.print("Name: ");
-        String name=sc.nextLine();
+        String name = sc.nextLine();
         System.out.print("Price: ");
-        double price=sc.nextDouble();
+        double price = sc.nextDouble();
         Product product = new Product(name,price);
 
 
