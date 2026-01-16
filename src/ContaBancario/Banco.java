@@ -5,47 +5,17 @@ import java.util.Scanner;
 public class Banco {
     public static void main(String[] args) {
 
-        Scanner sc= new Scanner(System.in);
-        int opcao = 0;
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o numero da conta:");
-        int numeroConta = sc.nextInt();
-        System.out.println("Digite o numero CPF do titular:");
-        int titular = sc.nextInt();
+        System.out.println();
 
+        System.out.println("Seja bem vindo ao seu banco! ");
+        System.out.println("vamos criar uma conta:");
+        System.out.println("Digite seu nome:");
+        String titular = sc.nextLine();
 
-        ContaBancaria contaBancaria = new ContaBancaria(numeroConta,titular);
-        System.out.println("Seja bem vindo , seu saldo é de: " + contaBancaria.getSaldo() );
-
-        System.out.println("Oque Deseja fazer?");
-
-        while (opcao != 4){
-
-            System.out.println("1- Depositar");
-            System.out.println("2- sacar");
-            System.out.println("3- Mostrar Saldo");
-            System.out.println("4- Sair");
-
-            opcao= sc.nextInt();
-
-            if (opcao == 1){
-                System.out.println("Valor para deposito: ");
-                double valor= sc.nextDouble();
-                contaBancaria.adicionarSaldo(valor);
-
-            }
-            if (opcao == 2){
-                System.out.println("Valor para saque: ");
-                double valor = sc.nextDouble();
-                contaBancaria.resgatarSaldo(valor);
-
-            }
-            if (opcao == 3){
-                System.out.println("Seu saldo é de: " + contaBancaria.getSaldo());
-            }
-
-        }
+        ContaBancaria contaUm = new ContaBancaria(titular);
+        System.out.println("seu numero da conta é : " + contaUm.getNumeroConta());
 
     }
 }
-
