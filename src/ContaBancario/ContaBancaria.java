@@ -1,16 +1,23 @@
 package ContaBancario;
 
+import java.util.Random;
+
 public class ContaBancaria {
     private int numeroConta;
-    private int titular;
+    private String titular;
     private double saldo;
 
     //Construtores
 
-    public ContaBancaria(int numeroConta, int titular) {
-        this.numeroConta = numeroConta;
-        this.titular = titular;
-        this.saldo = 0;
+    public ContaBancaria( String titular) {
+        if (titular == null || titular.isBlank()) {
+            throw new IllegalArgumentException("Titular inválido");
+        }
+
+        Random random = new Random();
+        this.numeroConta = random.nextInt(4001) + 1000; // 1000 a 5000
+        this.titular = titular.trim();
+        this.saldo = 0.0;
     }
 
     //getters e setters
@@ -23,29 +30,38 @@ public class ContaBancaria {
         this.numeroConta = numeroConta;
     }
 
-    public int getTitular() {
+    public String getTitular() {
         return titular;
     }
 
-    public void setTitular(int titular) {
-        this.titular = titular;
+    public void setTitular(String titular) {
+        if (titular == null || titular.isBlank()) {
+            throw new IllegalArgumentException("Titular inválido");
+        }
+        this.titular = titular.trim();
     }
 
     public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
 
     //METODOS
 
-    public void adicionarSaldo(double saldo){
+    public void depositar(double valor) {
+
         this.saldo += saldo;
-    }
-    public void resgatarSaldo(double saldo){
-        this.saldo -= saldo;
+        if (saldo >= 0) {
+            System.out.println("Valor incorreto");
+        }
     }
 
+    public void sacar(double valor) {
+
+        this.saldo -= saldo;
+        if (saldo >= 0) {
+            System.out.println("Valor incorreto");
+        }
+
+    }
 }
