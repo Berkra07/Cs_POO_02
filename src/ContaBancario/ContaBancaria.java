@@ -50,16 +50,19 @@ public class ContaBancaria {
 
     public void depositar(double valor) {
 
-        this.saldo += saldo;
-        if (saldo >= 0) {
+        if (valor > 0) {
+            this.saldo += valor;
+        }
+        else   {
             System.out.println("Valor incorreto");
         }
     }
 
     public void sacar(double valor) {
-
-        this.saldo -= saldo;
-        if (saldo >= 0) {
+        if (valor > 0 && valor <= saldo) {
+                this.saldo -= valor;
+        }
+        else  {
             System.out.println("Valor incorreto");
         }
 
