@@ -54,7 +54,7 @@ public class Program {
                 nomeTitular,
                 appBK.getSaldoConta()
         );
-        
+
         System.out.println();//pular linha
 
         System.out.println("Enter a withdraw value: ");
