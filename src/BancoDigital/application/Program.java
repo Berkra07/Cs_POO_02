@@ -28,7 +28,44 @@ public class Program {
             System.out.println("Enter initial deposit value: ");
             valor = sc.nextInt();
             appBK.saldoInicial(valor);
+            System.out.printf(
+                    "Account data:\n Account %d, Holder: %s, Balance: $ %.2f%n",
+                    numeroConta,
+                    nomeTitular,
+                    appBK.getSaldoConta()
+            );
         }
+        else {        System.out.printf(
+                "Account data:\n Account %d, Holder: %s, Balance: $ %.2f%n",
+                numeroConta,
+                nomeTitular,
+                appBK.getSaldoConta()
+        );
+        }
+
+        System.out.println();//pular linha
+
+        System.out.println("Ente a deposit value: ");
+        valor = sc.nextInt();
+        appBK.depositar(valor);
+        System.out.printf(
+                "Account data:\n Account %d, Holder: %s, Balance: $ %.2f%n",
+                numeroConta,
+                nomeTitular,
+                appBK.getSaldoConta()
+        );
+        
+        System.out.println();//pular linha
+
+        System.out.println("Enter a withdraw value: ");
+        valor=sc.nextInt();
+        appBK.Sacar(valor);
+        System.out.printf(
+                "Account data:\n Account %d, Holder: %s, Balance: $ %.2f%n",
+                numeroConta,
+                nomeTitular,
+                appBK.getSaldoConta()
+        );
 
     }
 }
