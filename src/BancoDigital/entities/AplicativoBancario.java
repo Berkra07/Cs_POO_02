@@ -42,7 +42,8 @@ public class AplicativoBancario {
 
     public void Sacar(double valor){
         if (valor > 0 && valor <= saldoConta){
-        this.saldoConta -= valor;
+        this.saldoConta -= valor ;
+        this.saldoConta -= 5;
         }
     }
 
