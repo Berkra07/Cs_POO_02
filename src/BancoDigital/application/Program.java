@@ -2,27 +2,27 @@ package BancoDigital.application;
 
 import BancoDigital.entities.AplicativoBancario;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
-        double valor = 0;
+        double valor ;
+        Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Seja bem vindo ao banco BK, vamos Criar uma conta: ");
-
-        System.out.println("Enter account number: ");
+        System.out.println("Enter account number: "); //Numero da conta
         int numeroConta = sc.nextInt();
 
-        System.out.println("Enter account holder: ");
+        System.out.println("Enter account holder: ");//Name
         String nomeTitular = sc.next();
 
         AplicativoBancario appBK = new AplicativoBancario(numeroConta,nomeTitular);
 
-        System.out.println("Account data:\n acont " + numeroConta + ", Holder: " + nomeTitular + ", Balance: $ " + valor );
 
         System.out.println("Is there na initial deposit (y/n)? ");
-        String resposta = sc.next();
+        sc.nextLine(); // limpar buffer
+        String resposta = sc.nextLine();
 
         if (resposta.equals("y")) {
             System.out.println("Enter initial deposit value: ");
