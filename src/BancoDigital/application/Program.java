@@ -25,7 +25,7 @@ public class Program {
         String resposta = sc.nextLine();
 
         if (resposta.equals("y")) {
-            System.out.println("Enter initial deposit value: ");
+            System.out.println("Enter  initial deposit value: ");
             valor = sc.nextInt();
             appBK.saldoInicial(valor);
             System.out.printf(
