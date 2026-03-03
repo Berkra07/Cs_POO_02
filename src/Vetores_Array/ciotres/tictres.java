@@ -10,7 +10,7 @@ public class tictres {
 
         int n= sc.nextInt();
         sc.nextLine();
-        
+
         product[] vect = new product[n];
 
         for (int i=0; i< vect.length; i++){
