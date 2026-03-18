@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Calculator {
-    public static void main(String[] args) {
+     static void main(String[] ignore) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
