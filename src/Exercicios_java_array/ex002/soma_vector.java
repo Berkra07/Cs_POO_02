@@ -15,7 +15,7 @@ public class soma_vector {
         double [] vect = new double [n];
 
         for ( int i = 0 ;i < n; i++ ){
-            System.out.println("digit um numero: ");
+            System.out.println("digite um numero: ");
             vect[i] = sc.nextDouble();
         }
 
