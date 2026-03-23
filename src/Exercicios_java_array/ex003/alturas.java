@@ -11,7 +11,7 @@ public class alturas {
 
         System.out.println("Quantas pessoas serão digitadas?");
         int n ,nmenores;
-        Double alturaTotal, ;
+       double  alturaTotal,percentualMenores ;
         n = sc.nextInt();
 
 
@@ -40,11 +40,7 @@ public class alturas {
             if (idade[i] < 16) {
                 nmenores++;}
         }
-/*
-                            IMPORTANTE
-        FALTA APENAS A PARTE DE PESSOAS COM MENOS DE 16 ANOS EM % E O
-        NOME DELAS PARA TERMINAR ESSE CÓDIGO
- */
+
             for (double valor : Altura){
             alturaTotal += valor;
         }
@@ -52,7 +48,16 @@ public class alturas {
         double media = alturaTotal / n;
 
 
-        System.out.print("Altura média: " + media );
+        percentualMenores = ((double)nmenores / n) * 100.0;
+
+        System.out.printf("\nAltura media = %.2f\n", media);
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", percentualMenores);
+
+        for(int i=0; i<n; i++) {
+            if (idade[i] < 16) {
+                System.out.printf("%s\n", name[i]);
+            }
+        }
 
         sc.close();
     }
