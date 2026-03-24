@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class numeros_pares {
-    static void main(String[] args) {
+    static void main() {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         int n, quantPares;
@@ -29,7 +29,6 @@ public class numeros_pares {
         }
 
         System.out.printf("\n QUANTIDADE DE PARES =  %d", quantPares);
-
         sc.close();
     }
 }
