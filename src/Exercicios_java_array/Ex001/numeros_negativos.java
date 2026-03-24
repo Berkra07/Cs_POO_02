@@ -3,7 +3,7 @@ package Exercicios_java_array.Ex001;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class ex001 {
+public class numeros_negativos {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
@@ -25,14 +25,12 @@ public class ex001 {
             vect[i] = sc.nextInt();//laço for que faz com que seja salvo as alturas para serem usadas nas médias
         }
 
-        System.out.println("Numeros negativos: ");
+        System.out.println("NUMEROS NEGATIVOS: ");
         for (int i = 0; i < n; i++) {
-            System.out.println(vect[i]);
-
-
-
-            sc.close();
-
+            if (vect [i] < 0 ){
+                System.out.printf("%d\n", vect[i] );
+            }
         }
+        sc.close();
     }
 }
