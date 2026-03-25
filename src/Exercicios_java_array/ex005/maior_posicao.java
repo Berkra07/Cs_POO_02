@@ -33,7 +33,7 @@ public class maior_posicao {
             vetor[i] = sc.nextDouble();
         }
 
-        for ( int i = 0)
+        for ( int i = 0; i < n ; i++)
 
 
 
