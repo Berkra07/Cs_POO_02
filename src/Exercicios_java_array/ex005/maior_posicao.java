@@ -22,7 +22,8 @@ public class maior_posicao {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Quantos numeros voce vai digitar? ");
-        int n;
+        int n, posmaior;
+        double maior;
 
         n = sc.nextInt();
 
@@ -33,9 +34,19 @@ public class maior_posicao {
             vetor[i] = sc.nextDouble();
         }
 
-        for ( int i = 0; i < n ; i++){
+        maior = vetor[0];
+        posmaior = 0;
 
+        for ( int i = 0; i < n ; i++){    //Cria um loop que percorre o vetor
+            if (vetor[i] > maior){        //Compara o valor atual (vetor[i]) com o que está em maior
+                maior = vetor[i];         // Atualiza a variável maior Agora ela passa a guardar esse novo valor menor encontrado
+                posmaior = i;             //Guarda a posição (índice) onde esse valor foi encontrado
+            }
         }
+
+
+        System.out.printf("MAIOR VALOR = %.1f\n",  maior);
+        System.out.printf("POSICAO DO MAIOR VALOR=  %d", posmaior ); // mostra para o usuario a posição
 
 
 
