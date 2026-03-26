@@ -1,8 +1,8 @@
-# Default ignored files
+# Arquivos ignorados por padrão
 /shelf/
 /workspace.xml
 out/
 *.class
 .idea/
-# Environment-dependent path to Maven home directory
+# Caminho dependente do ambiente para o diretório home do Maven
 /mavenHomeManager.xml
