@@ -24,7 +24,7 @@ public class Program {
         System.out.println();
         System.out.print("Product data: " +product.name + ", " + product.price + ", " + product.quantity);
 
-
+    System.out.println( );
         sc.close();
     }
 }
