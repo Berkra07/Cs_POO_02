@@ -30,3 +30,8 @@ public class Rent {
         this.email = email;
     }
 
+    @Override
+    public String toString() {
+        return  name + ", " + email ;
+    }
+}
