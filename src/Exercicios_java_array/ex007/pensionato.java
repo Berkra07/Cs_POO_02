@@ -34,6 +34,14 @@ public class pensionato {
 
             vetor[nRoom] = new Rent(name, email);
         }
+
+        System.out.print("\n Busy rooms:\n");
+        for(int i = 0; i < 10; i ++){
+            if (vetor[i] != null){
+                System.out.println(i + ": " + vetor[i]);
+            }
+        }
+
         sc.close();
     }
 }
