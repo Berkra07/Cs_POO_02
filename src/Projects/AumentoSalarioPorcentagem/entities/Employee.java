@@ -1,4 +1,4 @@
-package AumentoSalarioPorcentagem.entities;
+package Projects.AumentoSalarioPorcentagem.entities;
 
 public class Employee {
 
