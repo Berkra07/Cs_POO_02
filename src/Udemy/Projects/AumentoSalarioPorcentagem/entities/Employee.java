@@ -1,4 +1,4 @@
-package Projects.AumentoSalarioPorcentagem.entities;
+package Udemy.Projects.AumentoSalarioPorcentagem.entities;
 
 public class Employee {
 

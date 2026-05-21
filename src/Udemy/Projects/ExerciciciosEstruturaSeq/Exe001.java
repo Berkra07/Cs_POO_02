@@ -1,4 +1,4 @@
-package Projects.ExerciciciosEstruturaSeq;
+package Udemy.Projects.ExerciciciosEstruturaSeq;
 
 import java.util.Scanner;
 
