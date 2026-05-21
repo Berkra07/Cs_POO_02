@@ -1,4 +1,4 @@
-package Exercicios_java_array.ex006;
+package Udemy.Exercicios_java_array.ex006;
 
 import java.util.Locale;
 import java.util.Scanner;

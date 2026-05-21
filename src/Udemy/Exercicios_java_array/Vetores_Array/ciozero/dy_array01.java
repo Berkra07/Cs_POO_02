@@ -1,4 +1,4 @@
-package Exercicios_java_array.Vetores_Array.ciozero;
+package Udemy.Exercicios_java_array.Vetores_Array.ciozero;
 
 import java.util.Locale;
 import java.util.Scanner;
