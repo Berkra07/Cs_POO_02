@@ -1,6 +1,6 @@
-package Projects.RectangleCalculator.aplication;
+package Udemy.Projects.RectangleCalculator.aplication;
 
-import Projects.RectangleCalculator.entities.Rectangle;
+import Udemy.Projects.RectangleCalculator.entities.Rectangle;
 
 import java.util.Locale;
 import java.util.Scanner;

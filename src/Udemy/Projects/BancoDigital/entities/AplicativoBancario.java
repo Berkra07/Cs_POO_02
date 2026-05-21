@@ -1,4 +1,4 @@
-package Projects.BancoDigital.entities;
+package Udemy.Projects.BancoDigital.entities;
 
 public class AplicativoBancario {
 

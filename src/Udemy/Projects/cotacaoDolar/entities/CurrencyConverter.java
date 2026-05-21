@@ -1,4 +1,4 @@
-package Projects.cotacaoDolar.entities;
+package Udemy.Projects.cotacaoDolar.entities;
 
 public class CurrencyConverter {
 
