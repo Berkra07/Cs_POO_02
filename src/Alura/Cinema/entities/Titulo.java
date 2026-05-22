@@ -1,4 +1,4 @@
-package Alura.entities;
+package Alura.Cinema.entities;
 
 // src > br.com.alura.screenmatch.modelos > Titulo.java
 
@@ -7,22 +7,10 @@ package Alura.entities;
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
-    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
-    private int totalDeAvaliacoes;
+    private int  totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
-    public String getNome() {
-        return nome;
-    }
-
-    public int getAnoDeLancamento() {
-        return anoDeLancamento;
-    }
-
-    public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano;
-    }
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
@@ -40,9 +28,7 @@ public class Titulo {
         this.anoDeLancamento = anoDeLancamento;
     }
 
-    public void setIncluidoNoPlano(boolean incluidoNoPlano) {
-        this.incluidoNoPlano = incluidoNoPlano;
-    }
+
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
@@ -59,6 +45,6 @@ public class Titulo {
     }
 
     public double pegaMedia(){
-        return somaDasAvaliacoes / totalDeAvaliacoes;
+        return  somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }

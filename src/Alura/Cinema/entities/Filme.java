@@ -1,4 +1,4 @@
-package Alura.entities;
+package Alura.Cinema.entities;
 
 public class Filme extends Titulo {
     private String diretor;
@@ -7,7 +7,4 @@ public class Filme extends Titulo {
         return diretor;
     }
 
-    public void setDiretor(String diretor) {
-        this.diretor = diretor;
-    }
 }
