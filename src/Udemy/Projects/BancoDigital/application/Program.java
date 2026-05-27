@@ -17,7 +17,7 @@ public class Program {
         System.out.println("Enter account holder: ");//Name
         String nomeTitular = sc.next();
 
-        AplicativoBancario appBK = new AplicativoBancario(numeroConta,nomeTitular);
+        AplicativoBancario appBK = new AplicativoBancario();
 
 
         System.out.println("Is there na initial deposit (y/n)? ");
