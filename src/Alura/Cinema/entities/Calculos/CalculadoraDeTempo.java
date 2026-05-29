@@ -1,6 +1,8 @@
-package Alura.Cinema.entities;
+package Alura.Cinema.entities.Calculos;
 
-public class CalculadoraDeTempo extends Titulo{
+import Alura.Cinema.entities.Titulo;
+
+public class CalculadoraDeTempo extends Titulo {
     private int tempoTotal;
 
     public int getTempoTotal() {
