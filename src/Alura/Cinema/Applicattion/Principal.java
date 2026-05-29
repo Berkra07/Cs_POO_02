@@ -1,6 +1,6 @@
 package Alura.Cinema.Applicattion;
 
-import Alura.Cinema.entities.CalculadoraDeTempo;
+import Alura.Cinema.entities.Calculos.CalculadoraDeTempo;
 import Alura.Cinema.entities.Filme;
 import Alura.Cinema.entities.Series;
 
