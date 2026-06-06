@@ -33,7 +33,7 @@ Aqui você encontrará códigos, exercícios, anotações e projetos desenvolvid
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Java**  
+- **Java 21 LTS**  
 - IDE recomendada: *IntelliJ IDEA*
 
 ---
