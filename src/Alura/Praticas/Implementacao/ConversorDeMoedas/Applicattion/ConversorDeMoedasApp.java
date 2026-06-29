@@ -18,10 +18,10 @@ public class ConversorDeMoedasApp  {
         System.out.print("Olá. digite seu nome: ");
         String nome = sc.next();
 
-        System.out.print("Digite o valor em dolar que deseja converter para real: ");
+        System.out.print("Digite o valor em dólar que deseja converter para real: ");
         valorEmDolar = sc.nextDouble();
 
-        System.out.print("Digite a cotação do dolar hoje:");
+        System.out.print("Digite a cotação do dólar hoje:");
         cotacaoDoDolar = sc.nextDouble();
 
         System.out.println("Olá " + nome);
