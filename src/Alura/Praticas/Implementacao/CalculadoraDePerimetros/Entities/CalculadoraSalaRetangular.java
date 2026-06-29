@@ -10,7 +10,7 @@ public class CalculadoraSalaRetangular implements CalculoGeometrico {
     @Override
     public void calcularPerimetro(double altura, double largura) {
         double caluloPerimetro = altura * 2 + largura * 2;
-        System.out.println("O perimetro da sua sala é :" + caluloPerimetro + " metros");
+        System.out.println("O perímetro da sua sala é :" + caluloPerimetro + " metros");
 
     }
 }
