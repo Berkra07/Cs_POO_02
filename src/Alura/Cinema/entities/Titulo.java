@@ -20,6 +20,8 @@ public class Titulo {
         return totalDeAvaliacoes;
     }
 
+    public double getSomaDasAvaliacoes(){return somaDasAvaliacoes;}
+
     public void setNome(String nome) {
         this.nome = nome;
     }
