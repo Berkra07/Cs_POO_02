@@ -1,7 +1,7 @@
-package Alura.Praticas.Implementacao.LojaVirtual.Application;
+package Alura.Desafios.LojaVirtual.Application;
 
-import Alura.Praticas.Implementacao.LojaVirtual.Entities.Livro;
-import Alura.Praticas.Implementacao.LojaVirtual.Entities.ProdutoFisico;
+import Alura.Desafios.LojaVirtual.Entities.Livro;
+import Alura.Desafios.LojaVirtual.Entities.ProdutoFisico;
 import java.util.Scanner;
 
 public class App {
