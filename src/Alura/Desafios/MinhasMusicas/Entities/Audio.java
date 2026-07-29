@@ -27,7 +27,7 @@ public class Audio {
     }
 
     public void curte(){
-        this.classificacao ++;
+        this.totalCurtidas ++;
     }
 
     public void reproduz(){
