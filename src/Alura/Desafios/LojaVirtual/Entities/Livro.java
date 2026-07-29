@@ -1,4 +1,4 @@
-package Alura.Praticas.Implementacao.LojaVirtual.Entities;
+package Alura.Desafios.LojaVirtual.Entities;
 
 public class Livro extends Produto{
     private String titulo;

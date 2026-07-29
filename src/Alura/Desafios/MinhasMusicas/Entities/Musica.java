@@ -31,11 +31,14 @@ public class Musica extends Audio {
 
     @Override
     public int getClassificacao() {
-        if(getTotalReproducoes() > 200){
+        if(getTotalReproducoes() > 100000){
             return 10;
         }
+        else if (getTotalReproducoes() > 50000 ){
+            return 5;
+        }
         else {
-            return 7;
+            return 3;
         }
     }
 }
