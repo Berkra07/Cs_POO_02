@@ -28,11 +28,13 @@ public class ApplicationMsc {
                 System.out.println("Digite o nome da musica:");
                 Musica1.setTitulo(sc.nextLine());
 
+                System.out.println("Digite o nome do album :");
+                Musica1.setAlbum(sc.nextLine());
+
                 System.out.println("Digite o Cantor/Banda da musica:");
                 Musica1.setCantor(sc.nextLine());
 
-                System.out.println("Digite o nome do album :");
-                Musica1.setAlbum(sc.nextLine());
+
 
                 System.out.println("");
 
