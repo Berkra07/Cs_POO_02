@@ -13,6 +13,7 @@ public class App {
         System.out.println("1 - Cadastrar Livro");
         System.out.println("2 - Cadastrar Produto Físico");
         System.out.print("Escolha uma opção: ");
+
         int opcao = sc.nextInt();
 
         // Limpa o "Enter" que sobrou após ler o número da opção
@@ -58,6 +59,7 @@ public class App {
 
             default:
                 System.out.println("Opção inválida! Encerrando o programa.");
+
                 break;
         }
 
