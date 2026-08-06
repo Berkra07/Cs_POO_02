@@ -1,12 +1,12 @@
 package Alura.Desafios.MinhasMusicas.Entities;
 
 public class Audio {
-    private String titulo;
+    private static String titulo;
     private int totalReproducoes;
     private int totalCurtidas;
     private int classificacao;
 
-    public String getTitulo() {
+    public static String getTitulo() {
         return titulo;
     }
 
