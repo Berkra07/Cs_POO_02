@@ -3,7 +3,6 @@ package Alura.Desafios.MinhasMusicas.Entities;
 public class Musica extends Audio {
     private String album;
     private String cantor;
-    private String genero;
 
     public String getAlbum() {
         return album;
@@ -21,13 +20,6 @@ public class Musica extends Audio {
         this.cantor = cantor;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
 
     @Override
     public int getClassificacao() {

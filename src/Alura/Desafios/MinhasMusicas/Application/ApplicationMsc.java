@@ -39,6 +39,7 @@ public class ApplicationMsc {
                         musica1.setCantor(sc.nextLine());
 
                         System.out.println("\nMúsica cadastrada: " + musica1.getTitulo());
+                        System.out.println("Cantor: " + musica1.getCantor());
                         System.out.println("Álbum: " + musica1.getAlbum());
 
                         executarAcaoPosCadastro(sc, musica1);
