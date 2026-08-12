@@ -9,6 +9,17 @@ public class Titulo {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public String getNome() {
+        return nome;
+    }
+
+    public int getAnoDeLancamento() {
+        return anoDeLancamento;
+    }
+
+    public boolean isIncluidoNoPlano() {
+        return incluidoNoPlano;
+    }
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
