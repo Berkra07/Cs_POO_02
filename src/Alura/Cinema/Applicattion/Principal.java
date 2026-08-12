@@ -5,7 +5,7 @@ import Alura.Cinema.entities.Filme;
 import Alura.Cinema.entities.Series;
 
 public class Principal {
-     static void main() {
+     public static void main(String[] args) {
          Filme poderosoChefao = new Filme();
          System.out.println("********************************************************************");
          System.out.println("--------DADOS DO FILME-------");
