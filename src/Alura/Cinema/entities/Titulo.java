@@ -1,14 +1,12 @@
 package Alura.Cinema.entities;
 
-// src > br.com.alura.screenmatch.modelos > Titulo.java
-
-
 
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
+    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
-    private int  totalDeAvaliacoes;
+    private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
 
@@ -19,8 +17,6 @@ public class Titulo {
     public int getTotalDeAvaliacoes() {
         return totalDeAvaliacoes;
     }
-
-    public double getSomaDasAvaliacoes(){return somaDasAvaliacoes;}
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -47,6 +43,6 @@ public class Titulo {
     }
 
     public double pegaMedia(){
-        return  somaDasAvaliacoes / totalDeAvaliacoes;
+        return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
