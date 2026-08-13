@@ -53,5 +53,12 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
+
+        var filmeFavorito = new Filme();
+        filmeFavorito.setDuracaoEmMinutos(200);
+        filmeFavorito.setNome("Django Livre");
+        filmeFavorito.setAnoDeLancamento(2020);
+        filmeFavorito.avalia(10);
+
     }
 }
