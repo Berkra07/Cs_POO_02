@@ -6,6 +6,8 @@ import Alura.Cinema.entities.Episodio;
 import Alura.Cinema.entities.Filme;
 import Alura.Cinema.entities.Series;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme();
@@ -59,6 +61,13 @@ public class Principal {
         filmeFavorito.setNome("Django Livre");
         filmeFavorito.setAnoDeLancamento(2020);
         filmeFavorito.avalia(10);
+
+        ArrayList <Filme> listaDeFilmes = new ArrayList<>();
+        listaDeFilmes.add(filmeFavorito);
+        listaDeFilmes.add(meuFilme);
+        listaDeFilmes.add(meuFilme);
+        System.out.println("Tamanho da lista " + listaDeFilmes.size());
+        System.out.println("Primeio filme " + listaDeFilmes.get(0).getNome());
 
     }
 }
