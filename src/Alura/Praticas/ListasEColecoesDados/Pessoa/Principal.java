@@ -24,6 +24,6 @@ public class Principal {
 
         System.out.println("tamanho da lista:" + listaPessoas.size());
         System.out.println("Primeira pessoa: " + listaPessoas.getFirst());
-        System.out.println("lista de pessoas" + listaPessoas.toString());
+        System.out.println("lista de pessoas: " + listaPessoas);
     }
 }
