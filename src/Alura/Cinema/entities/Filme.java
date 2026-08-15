@@ -5,7 +5,9 @@ import Alura.Cinema.entities.Calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
 
 
-
+    public Filme(String nome) {
+        this.setNome(nome);
+    }
 
     @Override
     public int getClassificacao() {
