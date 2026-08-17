@@ -4,10 +4,22 @@ package Alura.Cinema.entities;
 public class Titulo {
     private String nome;
     private int anoDeLancamento;
-    private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
+
+    //Construtores
+    public Titulo() {
+
+    }
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+
+    //Getter e setter
 
     public String getNome() {
         return nome;
@@ -17,9 +29,6 @@ public class Titulo {
         return anoDeLancamento;
     }
 
-    public boolean isIncluidoNoPlano() {
-        return incluidoNoPlano;
-    }
 
     public int getDuracaoEmMinutos() {
         return duracaoEmMinutos;
