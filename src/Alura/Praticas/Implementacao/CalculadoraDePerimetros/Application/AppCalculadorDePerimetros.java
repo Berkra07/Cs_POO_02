@@ -5,7 +5,7 @@ import Alura.Praticas.Implementacao.CalculadoraDePerimetros.Entities.Calculadora
 import java.util.Scanner;
 
 public class AppCalculadorDePerimetros extends CalculadoraSalaRetangular {
-    static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double altura,largura;
 
