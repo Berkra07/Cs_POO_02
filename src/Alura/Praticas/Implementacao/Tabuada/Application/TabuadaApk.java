@@ -5,7 +5,7 @@ import Alura.Praticas.Implementacao.Tabuada.Entities.TabuadaMultiplicacao;
 import java.util.Scanner;
 
 public class TabuadaApk extends TabuadaMultiplicacao {
-    static void main() {
+    public static void main(String[] args)  {
         Scanner sc = new Scanner(System.in);
 
         int numero;
