@@ -19,6 +19,12 @@ public class Produto_apk {
         produto3.setPreco(1200.00);
         produto3.setQuantidade(2);
 
+
+        ProdutoPerecivel produto4 = new ProdutoPerecivel("Pão");
+        produto4.setDataValidade("19/08/2026");
+        produto4.setPreco(12.00);
+        produto4.setQuantidade(3);
+
         ArrayList<Produto> listaProdutos = new ArrayList<>();
         listaProdutos.add(produto1);
         listaProdutos.add(produto2);
