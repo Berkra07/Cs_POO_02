@@ -8,7 +8,6 @@ public class Produto {
     public Produto(String produto) {
         this.produto = produto;
     }
-
     public double getPreco() {
         return preco;
     }
@@ -27,5 +26,10 @@ public class Produto {
 
     public String getProduto() {
         return produto;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto : " + this.getProduto() + "(" + "Preço= " +  this.getPreco() + ")" ;
     }
 }
