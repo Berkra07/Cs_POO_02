@@ -1,18 +1,18 @@
 package Alura.Praticas.ListasEColecoesDados.Produtos;
 
 public class ProdutoPerecivel extends Produto{
-    private int dataValidade;
+    private String dataValidade;
 
 
     public ProdutoPerecivel(String produto) {
         super(produto);
     }
 
-    public int getDataValidade() {
+    public String getDataValidade() {
         return dataValidade;
     }
 
-    public void setDataValidade(int dataValidade) {
+    public void setDataValidade(String dataValidade) {
         this.dataValidade = dataValidade;
     }
 }
