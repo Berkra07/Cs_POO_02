@@ -11,18 +11,32 @@ public class PrincipalListas {
 
 
         Filme meuFilme = new Filme("O poderoso chefão", 1970);
+        meuFilme.avalia(5);
+
         Filme outroFilme = new Filme("Avatar", 2023);
+        outroFilme.avalia(7);
+
         var filmeFavorito = new Filme("Django Livre", 2020);
+        filmeFavorito.avalia(10);
+
         Series lost = new Series("Lost", 2000);
+        lost.avalia(5);
+
 
         ArrayList<Titulo> lista = new ArrayList<>();
-        lista.add(filmeFavorito);
         lista.add(meuFilme);
         lista.add(outroFilme);
+        lista.add(filmeFavorito);
         lista.add(lost);
 
         for(Titulo item: lista){
-            System.out.println(item);
+            System.out.println("\n" + item.getNome());
+            if (item instanceof Filme filme){
+                System.out.println("Classificação " + filme.getClassificacao() + "\n");
+            }
+            else if (item instanceof Series ){
+                System.out.print(" --> Isso é uma serie");
+            }
         }
     }
 }
