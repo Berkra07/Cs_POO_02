@@ -7,7 +7,7 @@ Aqui você encontrará códigos, exercícios, anotações e projetos desenvolvid
 
 ## 📚 Conteúdo do Repositório
 
-- **Introdução à POO**
+- **Introdução a POO**
   - Classes e Objetos  
   - Atributos e Métodos  
   - Construtores  
@@ -40,7 +40,7 @@ Aqui você encontrará códigos, exercícios, anotações e projetos desenvolvid
 
 ## 🚀 Objetivo do Curso
 
-Este repositório tem como objetivo:
+Este repositório pretende:
 
 - Registrar minha evolução no estudo de POO  
 - Compartilhar exemplos e exercícios  
