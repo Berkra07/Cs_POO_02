@@ -10,7 +10,7 @@ public class Cachorro extends Animal{
         System.out.println("Sentado");
     }
 
-    public void rlar(){
+    public void rolar(){
         System.out.println("Rolando");
     }
 }
