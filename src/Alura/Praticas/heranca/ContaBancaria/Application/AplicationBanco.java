@@ -4,7 +4,7 @@ import Alura.Praticas.heranca.ContaBancaria.Entities.ContaBancaria;
 import Alura.Praticas.heranca.ContaBancaria.Entities.ContaCorrente;
 
 public class AplicationBanco {
-    static void main() {
+   public static void main(String[] args) {
 
         ContaBancaria conta = new ContaBancaria();
         conta.depositar(1000);
