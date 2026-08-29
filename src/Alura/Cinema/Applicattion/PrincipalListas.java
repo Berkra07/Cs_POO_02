@@ -6,6 +6,8 @@ import Alura.Cinema.entities.Titulo;
 
 import java.util.ArrayList;
 
+import java.util.Collections;
+
 public class PrincipalListas {
     public static void main(String[] args) {
 
@@ -35,8 +37,19 @@ public class PrincipalListas {
                 System.out.println("Classificação " + filme.getClassificacao() + "\n");
             }
             else if (item instanceof Series ){
-                System.out.print(" --> Isso é uma serie");
+                System.out.println(" --> Isso é uma serie");
             }
         }
+
+
+
+        ArrayList <String> buscaPorArtista = new ArrayList<>();
+        buscaPorArtista.add("Kioto");
+        buscaPorArtista.add("Zendaia");
+        buscaPorArtista.add("Pascal");
+
+        System.out.println(buscaPorArtista);
+        Collections.sort(buscaPorArtista);
+        System.out.println(buscaPorArtista);
     }
 }
