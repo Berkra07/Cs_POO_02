@@ -6,7 +6,9 @@ import Alura.Cinema.entities.Titulo;
 
 import java.util.ArrayList;
 
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalListas {
     public static void main(String[] args) {
@@ -53,7 +55,7 @@ public class PrincipalListas {
         System.out.println(buscaPorArtista);
 
         System.out.println("Lista de titulos Ordenados");
-        Collections.sort(lista);
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
         System.out.println(lista);
     }
 }
