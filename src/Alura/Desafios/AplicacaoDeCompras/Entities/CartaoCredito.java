@@ -1,12 +1,12 @@
-package Alura.Desafios.AplicacaoDeCompras;
+package Alura.Desafios.AplicacaoDeCompras.Entities;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CartaoCredito {
-    private double limite;
+    private final double limite;
     private double saldo;
-    private List<Compra> compras;
+    private final List<Compra> compras;
 
     public CartaoCredito(double limite) {
         this.limite = limite;
@@ -29,5 +29,9 @@ public class CartaoCredito {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
     }
 }

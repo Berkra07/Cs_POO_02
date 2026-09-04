@@ -1,9 +1,9 @@
-package Alura.Desafios.AplicacaoDeCompras;
+package Alura.Desafios.AplicacaoDeCompras.Entities;
 
 public class Compra implements Comparable<Compra>{
 
-    private String descricao;
-    private double valor;
+    private final String descricao;
+    private final double valor;
 
     public Compra(String descricao, double valor) {
         this.descricao = descricao;
