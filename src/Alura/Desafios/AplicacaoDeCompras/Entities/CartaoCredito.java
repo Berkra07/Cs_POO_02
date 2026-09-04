@@ -1,12 +1,12 @@
-package Alura.Desafios.AplicacaoDeCompras;
+package Alura.Desafios.AplicacaoDeCompras.Entities;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CartaoCredito {
-    private double limite;
+    private final double limite;
     private double saldo;
-    private List<Compra> compras;
+    private final List<Compra> compras;
 
     public CartaoCredito(double limite) {
         this.limite = limite;
@@ -15,7 +15,7 @@ public class CartaoCredito {
     }
 
     public Boolean lancaCompra ( Compra compra){
-        if (this.saldo > compra.getValor()){
+        if (this.saldo >= compra.getValor()){
             this.saldo -= compra.getValor();
             this.compras.add(compra);
             return true;
@@ -29,5 +29,9 @@ public class CartaoCredito {
 
     public double getSaldo() {
         return saldo;
+    }
+
+    public List<Compra> getCompras() {
+        return compras;
     }
 }
