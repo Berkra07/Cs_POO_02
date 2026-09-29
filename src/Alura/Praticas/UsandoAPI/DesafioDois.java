@@ -1,7 +1,5 @@
 package Alura.Praticas.UsandoAPI;
 
-import Alura.Praticas.ListasEColecoesDados.ListaOrdenada02.Titulo;
-import com.google.gson.Gson;
 
 import java.io.IOException;
 import java.net.URI;
