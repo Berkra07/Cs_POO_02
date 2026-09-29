@@ -1,5 +1,8 @@
 package Alura.Praticas.UsandoAPI;
 
+import Alura.Praticas.ListasEColecoesDados.ListaOrdenada02.Titulo;
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -26,7 +29,6 @@ public class DesafioDois {
 
         System.out.println(response.statusCode());
         System.out.println(response.body());
-
 
 
     }
