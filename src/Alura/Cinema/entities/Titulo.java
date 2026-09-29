@@ -46,9 +46,6 @@ public class Titulo implements Comparable<Titulo> {
         this.nome = nome;
     }
 
-    public void setAnoDeLancamento(int anoDeLancamento) {
-        this.anoDeLancamento = anoDeLancamento;
-    }
 
 
 
