@@ -1,6 +1,8 @@
 package Alura.Praticas.API.DesafioUm;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.Strictness;
 
 public class PessoaMain {
     public static void main(String[] args) {
@@ -14,7 +16,9 @@ public class PessoaMain {
                 """;
 
 
-        Gson gson = new Gson();
+        Gson gson = new GsonBuilder()
+                        .setStrictness(Strictness.LENIENT)
+                        .create();
 
         Pessoa pessoa = gson.fromJson(json, Pessoa.class);
 
