@@ -41,8 +41,15 @@ public class PrincipalBusca {
         System.out.println(meuTituloOmdb);
 
 
-        Titulo meuTitulo = new Titulo(meuTituloOmdb);
-        System.out.println("Correto");
-        System.out.println(meuTitulo);
+        try {
+            Titulo meuTitulo = new Titulo(meuTituloOmdb);
+            System.out.println("Seu Titulo convertido: ");
+            System.out.println(meuTitulo);
+        } catch (NumberFormatException e){
+            System.out.println("Ocorreu um erro: ");
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("Programa finalizado!");
     }
 }
