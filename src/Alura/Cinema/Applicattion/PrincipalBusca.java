@@ -1,5 +1,6 @@
 package Alura.Cinema.Applicattion;
 
+import Alura.Cinema.entities.Execao.ErroDeConversaoDeAnoException;
 import Alura.Cinema.entities.Titulo;
 import Alura.Cinema.entities.TituloOmdb;
 import com.google.gson.FieldNamingPolicy;
@@ -50,7 +51,10 @@ public class PrincipalBusca {
         catch (IllegalArgumentException e){
             System.out.println("Algum erro de argumento na busca, verifique o endereço");
         }
-        
+        catch (ErroDeConversaoDeAnoException e){
+            System.out.println(e.getMessage());
+        }
+
 
         System.out.println("Programa finalizado!");
     }
