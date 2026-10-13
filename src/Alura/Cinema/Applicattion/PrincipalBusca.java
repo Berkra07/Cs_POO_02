@@ -19,29 +19,27 @@ public class PrincipalBusca {
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o filme que voce deseja buscar");
         var busca = sc.nextLine();
-        String endereco ="https://www.omdbapi.com/?t=" + busca + "&apikey=de09bb7f";
+        String endereco ="https://www.omdbapi.com/?t=" + busca.replace("","+") + "&apikey=de09bb7f";
+        try{
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(endereco))
+                    .build();
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(endereco))
-                .build();
+            HttpResponse<String > response = client
+                    .send (request, HttpResponse.BodyHandlers.ofString());
+            System.out.println(response.body());
 
-        HttpResponse<String > response = client
-                .send (request, HttpResponse.BodyHandlers.ofString());
-        System.out.println(response.body());
+            String json = response.body();
+            System.out.println(json);
 
-        String json = response.body();
-        System.out.println(json);
+            Gson gson = new GsonBuilder()
+                    .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                    .create();
 
-        Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
-                .create();
+            TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
+            System.out.println(meuTituloOmdb);
 
-        TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
-        System.out.println(meuTituloOmdb);
-
-
-        try {
             Titulo meuTitulo = new Titulo(meuTituloOmdb);
             System.out.println("Seu Titulo convertido: ");
             System.out.println(meuTitulo);
@@ -49,6 +47,10 @@ public class PrincipalBusca {
             System.out.println("Ocorreu um erro: ");
             System.out.println(e.getMessage());
         }
+        catch (IllegalArgumentException e){
+            System.out.println("Algum erro de argumento na busca, verifique o endereço");
+        }
+        
 
         System.out.println("Programa finalizado!");
     }
