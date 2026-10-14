@@ -10,6 +10,12 @@ public class AtividadeUm {
             System.out.println("vamos Dividir numeros !!");
 
 
+        System.out.println("Digite o numero que deseja dividir:");
+        int numeroUm = sc.nextInt();
+
+        System.out.println("digite o numero de vezes que deseja dividir esse numero");
+        int numeroDois = sc.nextInt();
+
 
 
     }
