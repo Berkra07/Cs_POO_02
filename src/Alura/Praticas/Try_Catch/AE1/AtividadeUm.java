@@ -16,6 +16,9 @@ public class AtividadeUm {
         System.out.println("digite o numero de vezes que deseja dividir esse numero");
         int numeroDois = sc.nextInt();
 
+        int divisao = numeroUm / numeroDois;
+
+        System.out.println("O numero " + numeroUm + " dividido por " + numeroDois + " resultara em : \n" + divisao);
 
 
     }
