@@ -120,6 +120,7 @@ public class ApplicationMsc {
 
                     case 0:
                         System.out.println("\nVoltando ao menu principal...");
+
                         emAcao = false;
                         break;
 
