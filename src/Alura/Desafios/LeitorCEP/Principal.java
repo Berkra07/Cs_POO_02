@@ -8,12 +8,18 @@ public class Principal {
 
         Scanner sc  = new Scanner(System.in);
         System.out.println("Digite o cef da sua cidade sem pontuação:");
-        int cep =sc.nextInt();
+        var cep =sc.nextLine();
 
 
         BuscaCep consultaCep = new BuscaCep();
-        Endereco novoEndereco = consultaCep.buscaEndereco(cep);
-        System.out.println(novoEndereco);
+        try {
+            Endereco novoEndereco = consultaCep.buscaEndereco(cep);
+            System.out.println(novoEndereco);
+        }catch (RuntimeException e
+        ) {
+            System.out.println(e.getMessage());
+            System.out.println("Finalizando a aplicação");
+        }
 
     }
 }
