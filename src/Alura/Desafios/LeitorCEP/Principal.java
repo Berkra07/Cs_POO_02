@@ -15,6 +15,8 @@ public class Principal {
         try {
             Endereco novoEndereco = consultaCep.buscaEndereco(cep);
             System.out.println(novoEndereco);
+            GeradorDeAquivo gerador = new GeradorDeAquivo();
+            gerador.salvaJson(novoEndereco);
         }catch (RuntimeException e
         ) {
             System.out.println(e.getMessage());
