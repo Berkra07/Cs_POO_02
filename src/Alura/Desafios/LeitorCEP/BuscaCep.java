@@ -1,5 +1,4 @@
 package Alura.Desafios.LeitorCEP;
-
 import com.google.gson.Gson;
 
 import java.io.IOException;
