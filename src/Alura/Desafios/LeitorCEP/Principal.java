@@ -23,5 +23,7 @@ public class Principal {
             System.out.println("Finalizando a aplicação");
         }
 
+        System.out.println("oi");
+
     }
 }
